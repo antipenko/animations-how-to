@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="app.css">
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
@@ -19,14 +20,69 @@
     </header>
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+        <!--
+            Todo тут слайд нас с владом
+            сначала выезжает Влад, потом я, потом скелится блок с текстом и текст
+            по строке выезжает
+        -->
+
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/hero.jpg" alt="Vlad & Vlad">
         </figure>
+
+    </section>
+
+    <section class="slide" >
+        <!--
+            Todo тут слайд c затравочкой: что то из детства, универа и бла бла лишь бы подвести к анимациями
+            сначала выезжает Влад, потом я, потом скелится блок с текстом и текст
+            по строке выезжает
+        -->
+
+        <figure>
+            <img class="cover" src="pictures/hero.jpg" alt="Vlad & Vlad">
+        </figure>
+
+    </section>
+
+    <section class="slide" >
+        <h2>Анимация!</h2>
+
+        <blockquote style="margin-top: 5em;">
+            <p>Ну оно сначала так, потом поехало, потом повернулось, а потом бац-бац и увеличелось!</p>
+        </blockquote>
+
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" >
+        <h2>Анимация!</h2>
+
+        <blockquote style="margin-top: 5em;">
+            <p>Последовательный показ заранее подготовленных графических файлов, а также
+                компьютерная имитация движения с помощью изменения (и перерисовки)
+                формы объектов или показа последовательных изображений с фазами движения.</p>
+        </blockquote>
+
         <style>
             #cover h2 {
                 margin: 30px 0 0;
@@ -50,54 +106,418 @@
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
+        <h2>Какая раньше была анимация в вебе?</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Ужасная</li>
+            <li>Стремная</li>
+            <li>По кадровая</li>
+            <li>Flash-анутая</li>
+            <li>Убивающая</li>
+            <li>GIF-анутая</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+    </section>
+
+    <section class="slide slide-table">
+        <h2>Способы анимировать сейчас</h2>
+
+        <table>
+            <tbody><tr>
+                <th scope="col">Типы</th>
+                <th>Простота использования</th>
+                <th>Гибкость</th>
+                <th>Нагрузка на систему</th>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">JS/CSS</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">JS</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">WEBGL</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">Houdini</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            </tbody></table>
+
+        <style>
+            .slide-table th ~ td {
+                text-align: center;
+            }
+        </style>
+
+    </section>
+
+    <section class="slide slide-table">
+        <h2>Способы анимировать сейчас</h2>
+
+        <table>
+            <tbody><tr>
+                <th scope="col">Типы</th>
+                <th>Простота использования</th>
+                <th>Гибкость</th>
+                <th>Нагрузка на систему</th>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td><input type="checkbox" checked></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <th scope="row">JS/CSS</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">JS</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">WEBGL</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            <tr>
+                <th scope="row">Houdini</th>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+                <td><input type="checkbox" ></td>
+            </tr>
+            </tbody></table>
+
+        <style>
+            .slide-table th ~ td {
+                text-align: center;
+            }
+        </style>
+
     </section>
 
     <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="shout shrink">CSS анимация</h2>
     </section>
 
     <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
+        <figure>
+            <img class="cover tri-kita" src="pictures/tri-kita.jpg" alt="3 lita">
+        </figure>
+        <style>
+            .tri-kita {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
+        <h2>CSS анимация</h2>
         <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
+            <li>Transition</li>
+            <li>Transform</li>
+            <li>@keyframes
                 <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
+                    <li>Transition</li>
+                    <li>Transform</li>
                 </ul>
             </li>
-            <li>Look, seven rows exactly!</li>
         </ol>
+
+        <p class=""> <small> Мы просто указываем/переопределяем значения свойств </small></p>
+    </section>
+
+    <!-- transition -->
+    <section class="slide">
+        <h2 >CSS transition</h2>
+        <p>Указываем, что у элемента с классом
+            <em>pizza</em>, свойство <strong>left</strong>
+            будет изменяться 1 секунду
+        </p>
+        <div style="width:25%;">
+            <pre>
+                <code>.pizza {</code>
+                <code class="mark">    transition: left 1s;</code>
+                <code>}</code>
+            </pre>
+        </div>
+
+        <img src="pictures/pizza.png" alt="pizza" class="pizza1">
+
+        <style>
+            .pizza1 {
+                position: absolute;
+                left: 60%;
+                bottom: 9rem;
+            }
+        </style>
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+        <h2 >CSS transition</h2>
+        <p>Указываем, что у элемента с классом
+            <em>pizza</em>, свойство <strong>left</strong>
+            будет изменяться 1 секунду
+        </p>
+        <div style="width:25%;">
+            <pre>
+                <code>.pizza {</code>
+                <code class="mark">    transition: left 1s;</code>
+                <code>}</code>
+            </pre>
+        </div>
+
+        <img src="pictures/pizza.png" alt="pizza" class="pizza">
+
+        <style>
+            .pizza {
+                position: absolute;
+                left: 60%;
+                bottom: 9rem;
+                transition: left 5s;
+            }
+
+            .active .pizza {
+                left: calc(100% - 200px);
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 >CSS transition</h2>
+
+        <ol>
+            <li><code>transition-property</code> <span class="next"> - <em> Что анимируем?</em></span>  </li>
+            <li><code>transition-duration</code> <span class="next"> - <em> Как долго?</em></span>  </li>
+            <li><code>transition-timing-function</code> <span class="next"> - <em> Как будет себя вести?</em></span>  </li>
+            <li><code>transition-delay</code> <span class="next"> - <em> Сколько ждем?</em></span>  </li>
+        </ol>
+
+    </section>
+
+    <section class="slide">
+        <h2>CSS transition-timing-function</h2>
+
+        <div class="next">
+            <iframe src="https://cubic-bezier.com/index.html#.17,.67,.9,.21" width="100%" height="300px" frameborder="0"></iframe>
+
+            <div style="text-align: center">
+                <a href="https://cubic-bezier.com/#.17,.67,.9,.21" target="_blank">https://cubic-bezier.com/#.17,.67,.9,.21</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slide">
+        <h2>CSS transition </h2>
+
+        <figure style="display: flex; align-items: center; justify-content: space-between;">
+            <figcaption>
+                <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">MDN CSS transitions</a>
+            </figcaption>
+            <img src="pictures/transition-code.gif" class="picture" alt="QR code to docs about css transitions">
         </figure>
+
+    </section>
+
+    <!--transform-->
+
+    <section class="slide">
+        <h2 style="margin-bottom: 2.5em;">CSS transform</h2>
+        <blockquote>
+            <p>
+                <strong>transform</strong> позволяет  поворачивать, масштабировать,
+                наклонять или сдвигать элемент по 3 осям (x, y, z).
+            </p>
+        </blockquote>
+
+    </section>
+    <section class="slide" style="padding: 0;">
+        <iframe src="https://codepen.io/hexagoncircle/full/XWJGQqy"
+                width="100%" height="100%"
+                style="position: relative;
+                        top: -63px;
+                        height: calc(100% + 63px);"
+                frameborder="0"></iframe>
+    </section>
+    <section class="slide" style="padding: 0;">
+            <iframe src="https://codepen.io/alukard/embed/ZpGojv/?height=640&theme-id=light&default-tab=result&embed-version=2"
+                    width="100%" height="100%"
+                    style="position: relative;
+                            top: -63px;
+                            height: calc(100% + 95px);"
+                    frameborder="0"></iframe>
+        </section>
+
+
+    <section class="slide">
+        <h2 style="    background-color: #fff;
+                        padding: 10px 0;
+                        position: relative;
+                        top: -1.5rem;">
+            Transform: skew(angel)</h2>
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+
+            <form>
+                <div style="width:50%;">
+            <pre>
+                <code>.skew {</code>
+                <code class="mark"> transform: skew(<input id="skew" type="text">)</code>
+                <code> transition: transform 1s;</code>
+                <code>}</code>
+            </pre>
+                </div>
+            </form>
+
+            <div class="skew-wrapper">
+                <div class="skew">
+                    skew
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .skew-wrapper {
+                 position: absolute;
+                 border: 4px solid red;
+                 width: 390px;
+                 height: 200px;
+                 top: calc(50% - 100px);
+                 left: 55%;
+             }
+            #skew {
+                display: inline-block;
+                font-size: 1.5rem;
+                width: 140px;
+            }
+            .skew {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                border: 4px dashed #588609;
+                width: 390px;
+                height: 200px;
+                top: -4px;
+                left: -4px;
+                transition: .7s;
+            }
+
+            /*.skew:hover {*/
+                /*transform: skew(30deg);*/
+            /*}*/
+        </style>
+
+        <script>
+            let skewInput = document.querySelector('#skew');
+            let skew = document.querySelector('.skew');
+            skewInput.addEventListener('input', function(){
+                skew.style.transform = `skew(${this.value})`
+            })
+        </script>
+
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img src="pictures/vdud.jpg" alt="vdud" class="cover" style="width: 100%; height: 100%;">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="top: -1.5rem;">
+            Transform в действии:</h2>
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+
+            <form>
+                <div style="width:60%;">
+            <pre>
+                <code>.skew {</code>
+                <code class="mark"> transform: translate(<input placeholder="0" data-tr="translate" type="text">)
+            scale(<input placeholder='1' data-tr="scale" type="text">)
+            rotate(<input placeholder="0" data-tr="rotate" type="text">);
+                </code>
+                <code> transition: .75s;</code>
+                <code>}</code>
+            </pre>
+                </div>
+            </form>
+
+            <img src="pictures/beer.png" alt="beer" class="beer">
+        </div>
+
+        <style>
+            .beer {
+                position: absolute;
+                top: calc(50% - 100px);
+                height: 200px;
+                left: 70%;
+                transition: 1s;
+            }
+
+        </style>
+
+        <script>
+            let transforms = document.querySelectorAll('[data-tr]');
+
+            let beer = document.querySelector('.beer');
+
+            transforms.forEach( prop => {
+                console.log(prop)
+                prop.addEventListener('blur', function(){
+                    let translate = document.querySelector('[data-tr="translate"]').value || 0;
+                    let scale = document.querySelector('[data-tr="scale"]').value || 1;
+                    let rotate = document.querySelector('[data-tr="rotate"]').value || 0;
+
+                    beer.style.transform = `translate(${translate}) scale(${scale}) rotate(${rotate})`;
+                })
+            });
+
+        </script>
+
+    </section>
+
+    <!-- keyframes -->
+
+    <section class="slide" style="padding-top: 2rem">
+        <h2 style="margin-bottom: 1rem">@keyframes</h2>
+
+        <pre>
+            <code>@keyframes <strong style="display: inline-block; background-color: yellow">animationName</strong> {</code>
+            <code>  from { <strong>animatedProperty</strong> } </code>
+            <code>  to { <strong>animatedProperty</strong> } </code>
+            <code>}</code>
+
+            <code>.selector {</code>
+            <code>  animation: <strong style="display: inline-block; background-color: yellow">animationName</strong></code>
+            <code>  transition: <strong>animatedProperty</strong> <strong>animatedTime</strong> <strong>timingFunction</strong> </code>
+            <code>}</code>
+        </pre>
+
     </section>
 
     <section class="slide">
@@ -153,15 +573,13 @@
     <section class="slide" id="picture">
         <h2>Pictures</h2>
         <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
+            <img class="cover tri-kita" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
             <figcaption class="copyright right white">
                 <a href="http://fiftyfootshadows.net/">© John Carey</a>
             </figcaption>
         </figure>
         <style>
-            #picture h2 {
-                color: white;
-            }
+
         </style>
     </section>
 
